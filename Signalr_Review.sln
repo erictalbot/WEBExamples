@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ui", "ui\ui.csproj", "{64E3F1D8-21EE-4439-8E9E-45E9D5F836E6}"
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ui_signalr", "ui_signalr\ui_signalr.csproj", "{64E3F1D8-21EE-4439-8E9E-45E9D5F836E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ui_css", "ui_css\ui_css.csproj", "{C20A455A-9279-44D6-A55B-2B6050483458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{64E3F1D8-21EE-4439-8E9E-45E9D5F836E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64E3F1D8-21EE-4439-8E9E-45E9D5F836E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64E3F1D8-21EE-4439-8E9E-45E9D5F836E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20A455A-9279-44D6-A55B-2B6050483458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20A455A-9279-44D6-A55B-2B6050483458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20A455A-9279-44D6-A55B-2B6050483458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20A455A-9279-44D6-A55B-2B6050483458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

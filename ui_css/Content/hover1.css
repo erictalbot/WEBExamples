@@ -1,0 +1,48 @@
+﻿
+
+.hover {
+    margin: 0;
+    padding: 0;
+}
+.hover li {
+    background-color: #EEEEEE;
+    border-bottom: 3px solid #CCCCCC;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 175px;
+}
+
+.hover li span {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.hover li:hover{
+    background-color: #8BCF01;
+    border-bottom-color: #62B000;
+    color: #265F01;
+}
+
+li a.source {
+    background-color: #CCCCCC;
+    bottom: -19px;
+    color: #2B4001 !important;
+    font-size: 85%;
+    left: 0;
+    line-height: 19px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+li:hover a.source {
+    background-color: #62B000;
+    bottom: 0;
+}

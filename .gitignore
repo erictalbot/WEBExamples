@@ -4,5 +4,7 @@
 *.csproj.user
 *.pdb
 *.force
-/ui/bin/
-/ui/obj/
+/ui_signalr/bin/
+/ui_signalr/obj/
+/ui_css/bin
+/ui_css/obj
