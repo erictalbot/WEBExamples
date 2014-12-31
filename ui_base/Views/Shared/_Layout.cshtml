@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <table class="header">
+        <tr>
+            <td class="header-title">
+                Application name or logo
+            </td>
+            <td class="header-navigation">
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "button-blue" })
+                @Html.ActionLink("Edit", "EditableIndex", "Home", new { area = "" }, new { @class = "button-green" })
+                @Html.ActionLink("API", "Index", "Help", new { area = "" }, new { @class = "button-red" })
+            </td>
+        </tr>
+    </table>
+    @RenderBody()
+    <div class="footer">
+        &copy;@DateTime.Now.Year - Eric Talbot
+    </div>
+    
+</body>
+</html>

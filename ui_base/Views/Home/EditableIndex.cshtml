@@ -1,0 +1,53 @@
+﻿@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqwidgets")
+@Styles.Render("~/Content/css/jqwidgets")
+@Styles.Render("~/Content/css/ListJQXWithDetailPane")
+
+<script>
+    $(document).ready(function () {
+
+        // Convert to observable array with knockout.
+        // Use TypeScript
+
+        var url = "/api/project";
+        $.get(url, function (data) {
+            var source =
+            {
+                datatype: "array",
+                datafields: [
+                    { name: 'name' },
+                    { name: 'id' },
+                    { name: 'number' }
+                ],
+                localdata: data
+            };
+            var dataAdapter = new $.jqx.dataAdapter(source);
+            $('#list').jqxGrid(
+              {
+                  width: 550,
+                  height: 150,
+                  theme: 'metro',
+                  source: dataAdapter,
+                  sortable: true,
+                  columns: [
+                    { text: 'Number', datafield: 'number' },
+                    { text: 'Name', datafield: 'name' },
+                    { text: 'Id', datafield: 'id', hidden: true }
+                  ]
+              }
+            );
+        })
+    });
+
+</script>
+
+
+<div id="list" class="jqxListWithDetail_List">
+</div>
+
+<div class="jqxListWithDetail_Detail">
+    detail column
+</div>
+
+
+

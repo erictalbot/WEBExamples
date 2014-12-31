@@ -1,0 +1,32 @@
+﻿.column1 {
+    width: 5em;
+    margin-right: 2em;
+    float: left;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column2 {
+    width: 5em;
+    margin-right: 2em;
+    float: left;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column-last {
+    margin-right: 2em;
+    float: left;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.li-nobullet {
+    list-style-type: none;
+    height: 2em;
+    background-color:white;
+}
+
+li:nth-child(odd) {
+    background-color:lightblue;
+}
